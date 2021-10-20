@@ -5,4 +5,4 @@ Code also allows the user to set movie as watched/not watched which changes its 
 
 Code doesnt save any data, it is meant only as frontend practice of processing user input and manipulating HTML and CSS with javascript.
 
-Styling are mostly done with the help of Bootstrap 5.
+Styling is mostly done with the help of Bootstrap 5.
