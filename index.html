@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Domaci zadatak 2</title>
+</head>
+<body>
+    <h1 class="text-center mt-5">Movies watchlist</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <table class="table">
+                    <thead>
+                        <th>Gledano</th><th>Naziv</th><th>Godina</th><th>Drzava</th><th>Napomena</th><th>Glumci</th>
+                    </thead>
+                    <tbody id="movies_table_body">
+
+                    </tbody>
+                </table>
+                <button class="btn btn-primary mt-5 float-end" data-bs-toggle="modal" data-bs-target="#add_movie_modal">Dodaj film</button>
+                
+                <div class="modal fade" id="add_movie_modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Dodaj Film</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="form-label" for="movieName">Naziv</label>
+                            <input class="form-control" type='text' name="movieName" id='movieNameInput' placeholder="Unesite naziv filma">
+
+                            <label class="form-label" for="movieYear">Godina</label>
+                            <input class="form-control" type='text' name="movieYear" id='movieYearInput' placeholder="Unesite godinu premijere filma">
+
+                            <label class="form-label" for="movieCountry">Drzava</label>
+                            <input class="form-control" type='text' name="movieCountry" id='movieCountryInput' placeholder="Unesite drzavu porijekla filma">
+
+                            <label class="form-label" for="movieNote">Napomena</label>
+                            <input class="form-control" type='text' name="movieNote" id='movieNoteInput' placeholder="Unesite napomenu za ovaj film">
+
+                            <label class="form-label" for="movieActors">Glumci</label>
+                            <input class="form-control" type='text' name="movieActors" id='movieActorsInput' placeholder="Unesite imena glumaca,odvojene zarezom">
+                            <div id="modalMessage" class="mt-3 text-center"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Odustani</button>
+                          <button type="button" class="btn btn-primary" id="addMovieFinal">Dodaj</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
